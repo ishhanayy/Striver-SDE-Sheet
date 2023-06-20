@@ -1,6 +1,6 @@
 //PROBLEM STATEMENT : https://www.codingninjas.com/studio/problems/maximum-path-sum-in-the-matrix_797998?leftPanelTab=1
 
-/*-------------------------RECURSION----------------*/
+/*-------------------------RECURSION-----------------*/
 #include <bits/stdc++.h> 
 int helper(vector<vector<int>>& matrix,int m, int j, int n)
 {
