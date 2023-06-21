@@ -37,6 +37,6 @@ int main() {
     cin>>n;
     cout<<endl;
     int sum = helper(n);
-    cout<<"The sum of n numbers is : "<<sum<<endl;
+    cout<<"The sum of "<< n <<" numbers is : "<<sum<<endl;
     return 0;
 }
