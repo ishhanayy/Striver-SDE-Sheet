@@ -1,4 +1,4 @@
-//PROBLEM STATEMENT : https://www.codingninjas.com/codestudio/problems/0-1-knapsack_920542
+//PROBLEM STATEMENT : https://www.codingninjas.com/codestudio/problems/minimum-elements_3843091
 
 /*----------------------RECURSION----------------*/
 #include <iostream>
