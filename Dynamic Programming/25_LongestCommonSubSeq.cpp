@@ -1,5 +1,7 @@
 //PROBLEM STATEMENT : https://www.codingninjas.com/studio/problems/longest-common-subsequence_624879?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=1
 
+//SubSequence : The Subsequence is the ordered substring, can be contagious or not. If the length of the string is N then the number of subsequence are 2^N.
+
 /*----------------------RECURSION----------------*/
 #include <iostream>
 #include <vector>
