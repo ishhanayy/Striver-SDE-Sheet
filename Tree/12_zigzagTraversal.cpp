@@ -1,4 +1,4 @@
-//Breadth FIrst Search : It is the way in which we can traverse the tree, in BFS we traverse levelwise.
+//Zigzag Traversal : It is the way in which we can traverse the tree, in zigzag we traverse levelwise but in zigzag pattern.
 #include <iostream>
 #include <vector>
 #include <queue>
