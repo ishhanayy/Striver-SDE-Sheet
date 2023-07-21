@@ -114,3 +114,39 @@ public:
         return dp[0][1][2];
     }
 };
+
+
+/*----------------------SPACE OPTIMIZED----------------*/
+class Solution {
+public:
+
+    int maxProfit(vector<int>& prices) 
+    {
+        vector<vector<int>> after(2, vector<int>(3, 0));   
+        vector<vector<int>> cur(2, vector<int>(3, 0));
+
+        for(int i = prices.size()-1; i>=0; i--)
+        {
+            for(int buy =0; buy<2; buy++)
+            {
+                for(int transaction = 1; transaction<3; transaction++)
+                {
+                    if(buy==1)
+                    {
+                        int buy_it = -prices[i]+after[0][transaction]; // if we have buyed then now we have to sell it
+                        int not_buy = 0 + after[1][transaction]; // we haven't buyed it.
+                        cur[buy][transaction] = max(buy_it, not_buy);
+                    }
+                    else
+                    {
+                        int sell_it = prices[i]+after[1][transaction-1]; // we have selled it
+                        int not_sell = 0+after[0][transaction]; // we haven't sell it 
+                        cur[buy][transaction] = max(sell_it, not_sell);
+                    }
+                }
+            }
+            after = cur;
+        }
+        return after[1][2];
+    }
+};
