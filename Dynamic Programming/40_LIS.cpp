@@ -80,3 +80,26 @@ public:
         return dp[0][-1+1];
     }
 };
+
+
+/*----------------------BACKTRACKING----------------*/
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) 
+    {
+        int maxi = 0;
+        vector<int> ans(nums.size(), 1);
+        for(int i =0; i<nums.size(); i++)
+        {
+            for(int j =0;j<i; j++)
+            {
+                if(nums[j]<nums[i])
+                {
+                    ans[i] = max(ans[i], 1+ans[j]);
+                }
+            }
+            maxi = max(maxi, ans[i]);
+        }
+        return maxi;
+    }
+};
