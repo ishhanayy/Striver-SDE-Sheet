@@ -1,4 +1,4 @@
-//PROBLEM STATEMENT : https://leetcode.com/problems/binary-search/
+//PROBLEM STATEMENT : https://www.codingninjas.com/studio/problems/lower-bound_8165382?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries
 
 /*----------------------ITERATIVE---------------------------*/
 int lowerBound(vector<int> arr, int n, int tar) 
