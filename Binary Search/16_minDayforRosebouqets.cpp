@@ -1,5 +1,8 @@
 //PROBLEM STATEMENT : https://www.codingninjas.com/studio/problems/rose-garden_2248080?utm_source=youtube&utm_medium=affiliate&utm_campaign=codestudio_Striver_BinarySeries&leftPanelTab=1
 
+/* What we have done, is that we have firstly find the range in which the blooming is possible which is minimum of the arr and maximum of the arr, now we will apply binary search between the range and iteratively check for the adjacent flowers to be bloomed and can possibly make the bouqet or not for the particular number between the range, if the bouqets are possible then we will return the answer else -1. 
+Elimination cases : If the number of element in the array is less then then (number of bouquets to be formed)*(the k flower) the it will always return -1. */
+
 int min_maxi_bloom(vector<int>& arr, int flag)
 {
 	int maxi = INT_MIN;
