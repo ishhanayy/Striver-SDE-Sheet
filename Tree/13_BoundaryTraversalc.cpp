@@ -1,5 +1,6 @@
 //PROBLEM STATEMENT : https://www.codingninjas.com/studio/problems/boundary-traversal_790725
 
+//Boudary traversal will be in anticlockwise direction
 #include <bits/stdc++.h> 
 /************************************************************
 
