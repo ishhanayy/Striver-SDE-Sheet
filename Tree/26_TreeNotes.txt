@@ -1,0 +1,1 @@
+using the preoroder and the post order we cannot make unique binary tree, but using pre order and inorder or postorder and inorder we can make a unique binary tree.
