@@ -22,7 +22,7 @@ public:
                 TreeNode* prev = temp->left;
                 while(prev->right && prev->right!=temp)
                 {
-                    temp=temp->right;
+                    prev=prev->right;
                 }
                 if(prev->right==NULL)
                 {
