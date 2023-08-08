@@ -5,7 +5,7 @@
 // {
 //     if(n<=1)
 //     {
-//         return n;
+//         return 1;
 //     }
 //     int one_step = ClimbingStairsWay(n-1);
 //     int two_step = ClimbingStairsWay(n-2);
@@ -29,7 +29,7 @@
 // {
 //     if(n<=1)
 //     {
-//         return n;
+//         return 1;
 //     }
 //     if(vec[n]!=-1)
 //     {
