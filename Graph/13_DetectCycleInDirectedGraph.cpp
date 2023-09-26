@@ -1,5 +1,7 @@
 //PROBLEM STATMENT : https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
 
+//Using DFS
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -101,3 +103,91 @@ int detectCycleInDirectedGraph(int n, vector < pair < int, int >> & grid)
   }
   return 0; 
 }
+
+//Using BFS 
+
+//On GFG 
+
+//PROBLEM STATEMENT : https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=detect-cycle-in-a-directed-graph
+
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+
+// } Driver Code Ends
+class Solution {
+  public:
+    // Function to detect cycle in a directed graph.
+    bool isCyclic(int v, vector<int> adj[]) {
+        //We will use topological sorting 
+        
+        vector<int> inDegree(v, 0);
+        
+        for(int i =0; i<v; i++)
+        {
+            for(auto it : adj[i])
+            {
+                inDegree[it]++;
+            }
+        }
+        
+        queue<int> q;
+        for(int i = 0; i<v; i++)
+        {
+            if(inDegree[i]==0)
+            {
+                q.push(i);
+            }
+        }
+        
+        int count = 0;
+        while(!q.empty())
+        {
+            int node = q.front();
+            q.pop();
+            count++;
+            for(auto it : adj[node])
+            {
+                inDegree[it]--;
+                if(inDegree[it]==0)
+                {
+                    q.push(it);
+                }
+            }
+        }
+        
+        if(count==v)
+        {
+            return false;
+        }
+        
+        return true;
+    }
+};
+
+//{ Driver Code Starts.
+
+int main() {
+
+    int t;
+    cin >> t;
+    while (t--) {
+        int V, E;
+        cin >> V >> E;
+
+        vector<int> adj[V];
+
+        for (int i = 0; i < E; i++) {
+            int u, v;
+            cin >> u >> v;
+            adj[u].push_back(v);
+        }
+
+        Solution obj;
+        cout << obj.isCyclic(V, adj) << "\n";
+    }
+
+    return 0;
+}
+
+// } Driver Code Ends
