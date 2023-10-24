@@ -1,5 +1,6 @@
 //PROBLEM STATMENT : https://practice.geeksforgeeks.org/problems/prerequisite-tasks/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=prerequisite-tasks
 
+//KeyPoint : Using Topological Sorting, if cycle is found then the course cannot get completed according to the given prerequisites, if there is no cycle then we are returning true else false
 
 //{ Driver Code Starts
 #include<bits/stdc++.h>
