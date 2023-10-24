@@ -1,5 +1,7 @@
 //PROBLEM STATEMENT : https://practice.geeksforgeeks.org/problems/course-schedule/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=course-schedule
 
+//KeyPoint : Using Topological Sorting, if cycle is found then the course cannot get completed according to the given prerequisites, if there is no cycle then we are returning the toposort array and if not then we are returning the empty array.
+
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
