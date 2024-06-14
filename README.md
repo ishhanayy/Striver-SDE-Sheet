@@ -1,2 +1,2 @@
 # Striver-SDE-Sheet
-Striver's Question Solution
+Each Wednesday pushing a new code 
